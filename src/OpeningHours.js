@@ -8,8 +8,8 @@ const OpeningHours = () => {
         }
     }
     const getOpeningTime = () => {
-        const open = '01:30'; // Time must me  HH:MM
-        const close = '01:52'; // Time must me  HH:MM
+        const open = '08:30'; // Time must me  HH:MM
+        const close = '20:10'; // Time must me  HH:MM
 
         const currentDate = new Date();
         let currentTimeHours = currentDate.getHours() < 10 ? "0" + currentDate.getHours() : currentDate.getHours();
