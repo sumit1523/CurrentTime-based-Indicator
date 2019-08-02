@@ -8,8 +8,8 @@ const OpeningHours = () => {
         }
     }
     const getOpeningTime = () => {
-        const open = '01:30'; // Time must me  HH:MM
-        const close = '01:52'; // Time must me  HH:MM
+        const open = '12:30'; // Time must me  HH:MM
+        const close = '23:00'; // Time must me  HH:MM
 
         const currentDate = new Date();
         let currentTimeHours = currentDate.getHours() < 10 ? "0" + currentDate.getHours() : currentDate.getHours();
@@ -26,7 +26,7 @@ const OpeningHours = () => {
 
     return (
         <div>
-            <div className="Indicator"><span className={`${getColorStatus()}`}></span><span>Working Hours</span></div>
+            <div className="Indicator"><span className={`${getColorStatus()}`}></span><span>Opening Hours</span></div>
         </div>
     )
 }
